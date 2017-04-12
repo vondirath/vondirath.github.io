@@ -86,31 +86,9 @@ var s,
             return list[Math.floor(Math.random() * list.length)]
         },
 
-    }// end bashwindow controller
-
-var t,
-    BackgroundAnimation = {
-        settings: {
-            canvas: $('#canvas'),
-            ctx: canvas.getContext('2d'),
-            background: "hello"
-        },
-
-        init: function () {
-            t = this.settings
-            this.draw();
-
-        },
-
-        draw: function () {
-            ctx = t.ctx;
-
-        },
-
-    };// end canvas animation
+    };// end bashwindow controller
 
 // starts app by calling init function
 (function () {
     BashWindow.init();
-    BackgroundAnimation.init();
 })();

@@ -11,6 +11,10 @@ light purple #8A73CA
 
 */
 
+body {
+    background: black;
+}
+
 body, html, a:hover {
     text-decoration: none;
     list-style: none;
@@ -22,10 +26,10 @@ li {
     display: inline;
 }
 
-
 a {
     color: black;
 }
+
 
 /* header*/
 
@@ -47,7 +51,6 @@ a {
 .hidden {
     display: none;
 }
-
 
 .title_holder {
     margin-left: 7%;
@@ -99,13 +102,18 @@ a {
 
 
 /* end menu Icon */
+
+
 /* start modal */
 
 #modal {
     background: black;
 }
 
+
 /* end modal */
+
+
 /* Bash Screen */
 
 .name {
@@ -200,7 +208,6 @@ a {
     display: inline;
 }
 
-
 @media screen and (max-width: 500px) {
     body {
         background: white;
@@ -226,7 +233,7 @@ a {
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
     h1 {
         font-size: 25px;
     }
@@ -235,20 +242,5 @@ a {
     }
 }
 
+
 /* End Bash Screen */
-
-
-/* start canvas */
-
-#canvas {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: -3;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* end canvas */

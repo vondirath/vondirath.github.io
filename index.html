@@ -2,74 +2,73 @@
 <html lang='en'>
 
 <head>
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>Thomas Lopez Web Developer</title>
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Thomas Lopez Web Developer</title>
+    <!-- load page static -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- End Load static -->
 </head>
+
 <body>
+    <div class="title_group">
+        <div class="title_holder">
+            <h1 class="name_header"> Thomas Lopez </h1>
+            <p class="subheader"> Full Stack Web-Development </p>
+        </div>
+        <!-- end title holder-->
 
-<!-- load page static -->
-<link rel="stylesheet" type="text/css" href="style.css" />
-<!-- End Load static -->
-<canvas id="canvas">
-<div class="title_holder">
-      <h1 class="name_header"> Thomas Lopez </h1>
-      <p class="subheader"> Full Stack Web-Development </p>
-      </div><!-- end title holder-->
-</canvas>
-
-  <div class="title_group">
-
-      <div id="menu_bar_container"><!-- start menu section-->
-        <div class="menubar1"></div>
-        <div class="menubar2"></div>
-        <div class="menubar3"></div>
-      </div><!-- end menu section -->
-  </div><!-- end titlegroup -->
-</div>
+        <div id="menu_bar_container">
+            <!-- start menu section-->
+            <div class="menubar1"></div>
+            <div class="menubar2"></div>
+            <div class="menubar3"></div>
+        </div>
+        <!-- end menu section -->
+    </div>
+    <!-- end titlegroup -->
+    </div>
     <div id="modal" class="hidden">
-      <div class="big_window">
-        <!-- start terminal window -->
-        <div class="button red"> </div>
-        <div class="button yellow"> </div>
-        <div class="button green"> </div>
-        <div class="window_title"><span class="glyphicon glyphicon-signal" style="color: #46b41e;"></span> Thomas &mdash; python &#9666; -bash:start
-          web &mdash;
-          <div id="bash"></div>
+        <div class="big_window">
+            <!-- start terminal window -->
+            <div class="button red"> </div>
+            <div class="button yellow"> </div>
+            <div class="button green"> </div>
+            <div class="window_title"><span class="glyphicon glyphicon-signal" style="color: #46b41e;"></span> Thomas &mdash; python &#9666; -bash:start
+                web &mdash;
+                <div id="bash"></div>
+            </div>
+            <div class="text_area">
+                <!-- Python used for date for easy formatting -->
+                <p id="terminal_start"> Last login: {{date}} on ttys001 </p>
+                <p id="sh" class="term_para">$ sh portfolio.sh</p>
+                <p class="term_para">Click any of the following links!</p>
+                <p class="term_para"><a href="https://www.linkedin.com/in/thomas-j-lopez/">LinkedIn</a></p>
+                <p class="term_para"><a href="mailto:vondirath@gmail.com">Email</a></p>
+                <p class="term_para"><a href="https://twitter.com/vondirath">Twitter</a></p>
+                <p class="term_para"><a href="https://github.com/vondirath">Github</a></p>
+                <p class="term_para"><a href="https://medium.com/@vondirath">Blog</a></p>
+                <p class="term_para"><a href="#">View Work</a></p>
+                <p class="term_para"><a href="#">About Me</a></p>
+                <p class="term_para name">Thomas Lopez - Full Stack Web</p>
+            </div>
         </div>
-        <div class="text_area">
-          <!-- Python used for date for easy formatting -->
-          <p id="terminal_start"> Last login: {{date}} on ttys001 </p>
-          <p id="sh" class="term_para">$ sh portfolio.sh</p>
-          <p class="term_para">Click any of the following links!</p>
-          <p class="term_para"><a href="https://www.linkedin.com/in/thomas-j-lopez/">LinkedIn</a></p>
-          <p class="term_para"><a href="mailto:vondirath@gmail.com">Email</a></p>
-          <p class="term_para"><a href="https://twitter.com/vondirath">Twitter</a></p>
-          <p class="term_para"><a href="https://github.com/vondirath">Github</a></p>
-          <p class="term_para"><a href="https://medium.com/@vondirath">Blog</a></p>
-          <p class="term_para"><a href="#">View Work</a></p>
-          <p class="term_para"><a href="#">About Me</a></p>
-          <p class="term_para name">Thomas Lopez - Full Stack Web</p>
-        </div>
-      </div>
-      <!-- end terminal window -->
+        <!-- end terminal window -->
     </div>
     <!-- end hidden section -->
 
 
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted"> © Thomas Lopez 2017 </p>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"> &copy; Thomas Lopez 2017 </p>
+        </div>
+    </footer>
 
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="script.js"></script>
-<!-- end JS -->
+    <!-- JS -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+    <!-- end JS -->
 
 
 </body>
+
 </html>
