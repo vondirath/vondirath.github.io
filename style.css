@@ -209,9 +209,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        background: white;
-    }
     .big_window {
         margin: 10px;
         width: 90%;
