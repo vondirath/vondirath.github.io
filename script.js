@@ -64,6 +64,8 @@ var s,
         },
 
         // helpers
+
+        // takes height(x) and width(y) for text area(z)
         getCoords: function (x, y, z) {
             // checks if argument is a number between 1 and 500 and a real number, else uses default value
             var checkVal = function (val1, defaultval) {
