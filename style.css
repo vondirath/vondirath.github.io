@@ -12,7 +12,7 @@ light purple #8A73CA
 */
 
 body {
-    background: black;
+    background: url('macbackground.jpeg');
 }
 
 body, html, a:hover {

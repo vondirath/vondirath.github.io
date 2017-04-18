@@ -81,7 +81,7 @@ var s,
             // returns a string to be used representing the column and line size
             return (bash_x + "x" + window_height)
         },
-
+        // random number generator by list length
         getRandom: function (list) {
             return list[Math.floor(Math.random() * list.length)]
         },
