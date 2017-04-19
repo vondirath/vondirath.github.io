@@ -12,7 +12,7 @@ light purple #8A73CA
 */
 
 body {
-    background: url('images/macbackground.jpeg');
+    background: url('../images/macbackground.jpeg');
 }
 
 body, 
@@ -123,7 +123,6 @@ a {
 
 .big_window {
     background: #ebebeb;
-    font-style: none;
     width: 60%;
     border-top: 2px groove #f3f3f3;
     border-radius: 5px;
@@ -137,14 +136,21 @@ a {
 .text_area {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 28em;
+    height: 100%;
     border: 1px groove #202325;
     background-color: white;
-    box-shadow: 1px #c8c8c8;
+    box-shadow: 10px 10px 10px 10px #c8c8c8;
     font-family: Menlo, monospace, Courier New, Courier;
     padding: 5px;
     font-size: 15px;
     line-height: 15px;
+}
+
+.text_area_large {
+    margin: 0;
+    height: 80%;
+    width: 90%;
+    margin-top: -20px;
 }
 
 .term_para {
@@ -178,7 +184,7 @@ a {
 .yellow {
     background-color: #fec041;
     border: 1px solid #e5a142;
-    cursor: no-drop;
+    cursor: pointer;
 }
 
 .yellow:hover {
@@ -189,7 +195,7 @@ a {
 .green {
     background-color: #32c84b;
     border: 1px solid #32ab42;
-    cursor: no-drop;
+    cursor: pointer;
 }
 
 .green:hover {
@@ -242,3 +248,15 @@ a {
 
 
 /* End Bash Screen */
+/* start bash icon */
+.bash_icon {
+    height: 38px;
+    width: 38px;
+    margin: 0 auto 0 auto;
+}
+/* end bash icon */
+/* start animation */
+
+@keyframes animateWindowDown {
+    
+}

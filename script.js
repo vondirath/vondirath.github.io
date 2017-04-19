@@ -17,7 +17,9 @@ var s,
             redbutton: $('.red'),
             yellowbutton: $('.yellow'),
             greenbutton: $('.green'),
-            date: $('#datetime')
+            date: $('#datetime'),
+            bW: $('.big_window'),
+            bashIcon: $('.bash_icon')
         },
 
         // s is pointer to settings and calls bind and start up functions
@@ -34,19 +36,56 @@ var s,
                 s.bash.html(BashWindow.getCoords(s.line_height, s.line_width, s.ta));
             };
 
+            // helper to toggle bash Icon 
+            var toggleBashIcon = function() {
+                s.bashIcon.toggleClass("hidden");
+            };
+
+            // helper to toggle menu modal
+            var toggleMenuModal = function() {
+                s.modal.toggleClass("hidden");
+                s.menu.toggleClass("change");
+            };
+
+            // helper to toggle modal while hiding bash icon if visible.
+            var toggleMenu = function() {
+                toggleMenuModal();
+                    if (s.bashIcon.is(':visible')) {
+                        toggleBashIcon();
+                    }
+                    getsize();
+            };
+
             // binds menu icon to animate and show modal. calls size to populate window size.
             s.menu.on("click",
                 function () {
-                    s.menu.toggleClass("change");
-                    s.modal.toggleClass("hidden");
-                    getsize();
+                    toggleMenu();
+                });
+            
+            // binds toggle when bash icon clicked
+            s.bashIcon.on("click",
+                function () {
+                    toggleMenu();
                 });
 
             // adds toggles to redbutton on modal window.
             s.redbutton.on("click",
                 function () {
-                    s.modal.toggleClass("hidden");
-                    s.menu.toggleClass("change");
+                    toggleMenuModal();
+                });
+            
+            // adds functionality to greenbutton on modal window
+            s.greenbutton.on("click",
+                function(){
+                    s.bW.toggleClass("text_area_large");
+                    getsize();
+                });
+
+            // adds functionality to yellow button to display an icon
+            s.yellowbutton.on("click",
+                function() {
+                    toggleBashIcon();
+                    toggleMenuModal();
                 });
 
             // updates size every time window is resized
