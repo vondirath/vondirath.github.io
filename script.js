@@ -15,6 +15,9 @@ var s,
             menu: $('#menu_bar_container'),
             modal: $('#modal'),
             redbutton: $('.red'),
+            yellowbutton: $('.yellow'),
+            greenbutton: $('.green'),
+            date: $('#datetime')
         },
 
         // s is pointer to settings and calls bind and start up functions
@@ -22,6 +25,7 @@ var s,
             s = this.settings;
             this.modalBindings();
             this.tipoftheday();
+            this.renderDate();
         },
 
         modalBindings: function () {
@@ -48,6 +52,18 @@ var s,
             // updates size every time window is resized
             s.window.on('resize', getsize);
 
+        },
+
+        // Renders and formats datetime
+        renderDate: function() {
+            // creates date object and converts to string
+            dateObj = new Date().toString();
+            // splits date object by Month Day Year to mimick terminal date
+            mdy = dateObj.substring(0, 10);
+            // splits date object by hour min sec to mimick terminal
+            hms = dateObj.substring(15, 24);
+            // inserts date into HTML ID
+            s.date.html(mdy + hms);
         },
 
         // selects random tip from top of day list
@@ -83,6 +99,7 @@ var s,
             // returns a string to be used representing the column and line size
             return (bash_x + "x" + window_height)
         },
+
         // random number generator by list length
         getRandom: function (list) {
             return list[Math.floor(Math.random() * list.length)]

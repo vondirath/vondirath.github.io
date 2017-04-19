@@ -12,10 +12,12 @@ light purple #8A73CA
 */
 
 body {
-    background: url('macbackground.jpeg');
+    background: url('images/macbackground.jpeg');
 }
 
-body, html, a:hover {
+body, 
+html, 
+a:hover {
     text-decoration: none;
     list-style: none;
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -33,7 +35,8 @@ a {
 
 /* header*/
 
-.name_header, .subheader {
+.name_header, 
+.subheader {
     margin: 0;
     color: #E7FCE9;
 }
@@ -112,8 +115,6 @@ a {
 
 
 /* end modal */
-
-
 /* Bash Screen */
 
 .name {
